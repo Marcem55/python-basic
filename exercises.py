@@ -116,28 +116,33 @@
 
 
 #11 Pide al usuario un número y comprueba si es un número perfecto (la suma de sus divisores es igual al número).
-user_number = int(input("Enter a number: "))
-if user_number == 1:
-    print("1 is perfect")
+# user_number = int(input("Enter a number: "))
+# if user_number == 1:
+#     print("1 is perfect")
+# else:
+#     divisor_sum = 0
+#     aux_num = user_number - 1
+
+#     while aux_num > 0:
+#         if user_number % aux_num != 0:
+#             aux_num -= 1
+#         else:
+#             divisor_sum = divisor_sum + aux_num
+#             aux_num -= 1
+
+#     if user_number == divisor_sum:
+#         print(f"{user_number} is perfect")
+#     else:
+#         print(f"{user_number} is not perfect")
+
+
+#12 Declara una lista con colores y comprueba si un color ingresado por el usuario está en la lista.
+colors = ["red", "blue", "yellow", "pink", "white", "black", "orange"]
+user_color = input("Enter a color: ")
+if user_color in colors:
+    print("It's in the list")
 else:
-    divisor_sum = 0
-    aux_num = user_number - 1
-
-    while aux_num > 0:
-        if user_number % aux_num != 0:
-            aux_num -= 1
-        else:
-            divisor_sum = divisor_sum + aux_num
-            aux_num -= 1
-
-    if user_number == divisor_sum:
-        print(f"{user_number} is perfect")
-    else:
-        print(f"{user_number} is not perfect")
-
-
-#12 Declara una lista con los colores del arcoíris y comprueba si un color ingresado por el usuario está en la lista.
-
+    print("It isn't in the list")
 
 
 #13 Pide al usuario su nombre y comprueba si tiene más de 3 vocales.
