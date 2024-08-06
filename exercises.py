@@ -137,15 +137,26 @@
 
 
 #12 Declara una lista con colores y comprueba si un color ingresado por el usuario está en la lista.
-colors = ["red", "blue", "yellow", "pink", "white", "black", "orange"]
-user_color = input("Enter a color: ")
-if user_color in colors:
-    print("It's in the list")
+# colors = ["red", "blue", "yellow", "pink", "white", "black", "orange"]
+# user_color = input("Enter a color: ")
+# if user_color in colors:
+#     print("It's in the list")
+# else:
+#     print("It isn't in the list")
+
+
+#13 Pide al usuario su nombre y comprueba si tiene 3 o más vocales.
+vowels = ["a", "e", "i", "o", "u"]
+name = input("Enter your name: ")
+vowel_counter = 0
+for letter in name:
+    if letter in vowels:
+        vowel_counter += 1
+
+if vowel_counter >= 3:
+    print("3 or more vowels")
 else:
-    print("It isn't in the list")
-
-
-#13 Pide al usuario su nombre y comprueba si tiene más de 3 vocales.
+    print("2 or less vowels")
 
 
 
